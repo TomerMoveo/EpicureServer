@@ -13,7 +13,7 @@
         "key": "/Users/tomermesser/Desktop/skill-server.pem",
         "user": "ubuntu",
         "host": ["ec2-35-178-66-248.eu-west-2.compute.amazonaws.com"],
-        "ref": "origin/master",
+        "ref": "source/origin/master",
         "repo": "https://github.com/TomerMoveo/EpicureServer.git",
         "path": "/home/ubuntu/epicure",
         "ssh_options": "StrictHostKeyChecking=no",
