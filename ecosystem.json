@@ -10,7 +10,7 @@
     ],
     "deploy": {
       "development": {
-        "key": "/Users/tomermesser/Desktop/skill-server.pem",
+        "key": "/Users/tomermesser/Desktop/skill_tomer_test.pem",
         "user": "ubuntu",
         "host": ["ec2-3-121-216-68.eu-central-1.compute.amazonaws.com"],
         "ref": "origin/master",
