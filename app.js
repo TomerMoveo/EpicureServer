@@ -42,5 +42,5 @@ app.listen (port ,err => {
 
 // ## Connect to Compass DB ## //
 mongoose.connect(
-    process.env.popularResDB, { useUnifiedTopology: true }, () => console.log('-- Restuarants DB --')
+    process.env.testdb, { useUnifiedTopology: true }, () => console.log('-- Restuarants DB --')
 );
