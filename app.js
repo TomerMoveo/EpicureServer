@@ -42,5 +42,5 @@ app.listen (port ,err => {
 
 // ## Connect to Compass DB ## //
 mongoose.connect(
-    process.env.popularResDB, { useUnifiedTopology: true }, () => console.log('-- Restuarants DB --')
+    "mongodb://localhost:27017/epicure", { useUnifiedTopology: true }, () => console.log('-- Restuarants DB --')
 );
