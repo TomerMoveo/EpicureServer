@@ -1,7 +1,6 @@
 require('dotenv/config');
 const express = require('express');
 const app = express();
-const app_1 = express();
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 const cors = require('cors');
@@ -9,14 +8,7 @@ const cors = require('cors');
 const port = process.env.PORT || 3000;
 // ## Use the .env file to hide our name + password in the database-key connection ## //
 
-
-const login = require('./routes/login');
-const allChefs = require('./routes/chefsR');
-const allMeals = require('./routes/mealsR');
-const allRestuarants = require('./routes/restuarantsR');
-const popularRes = require('./routes/popularR');
-const signatureMeals = require('./routes/signatureR');
-const resByChef = require('./routes/chefByIdR');
+const apiRoutes = require('./routes/apiRoutes');
 
 // ## Middleware ## //
 app.use((req, res, next) =>{
@@ -25,13 +17,15 @@ app.use((req, res, next) =>{
 })
 app.use(cors());
 app.use(bodyParser.json());
-app.use('/login', login);
-app.use('/chefs', allChefs);
-app.use('/meals', allMeals);
-app.use('/restuarants', allRestuarants);
-app.use('/popular', popularRes);
-app.use('/signature', signatureMeals);
-app.use('/resbychef', resByChef);
+app.use('/api', apiRoutes);
+
+// app.use('/login', login);
+// app.use('/chefs', allChefs);
+// app.use('/meals', allMeals);
+// app.use('/restuarants', allRestuarants);
+// app.use('/popular', popularRes);
+// app.use('/signature', signatureMeals);
+// app.use('/resbychef', resByChef);
 // app_1.use('/api', app);
 
 // * My port * //
