@@ -32,10 +32,10 @@ app.use('/restuarants', allRestuarants);
 app.use('/popular', popularRes);
 app.use('/signature', signatureMeals);
 app.use('/resbychef', resByChef);
-app_1.use('/api', app);
+// app_1.use('/api', app);
 
 // * My port * //
-app_1.listen (port ,err => {
+app.listen (port ,err => {
     if (err) {
         return console.log('EROOR:', err);
     }
