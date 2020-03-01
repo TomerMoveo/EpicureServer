@@ -44,15 +44,3 @@ app.listen (port ,err => {
 mongoose.connect(
     process.env.popularResDB, { useUnifiedTopology: true }, () => console.log('-- Restuarants DB --')
 );
-
-// const db = mongoose.connection;
-// db.on('open', () => {
-//     try {const chef = new Chef({name: 'yoss'})
-//     chef.save();
-//     const chefs =  Chef.find({naem}, (err,res)=>{
-//         console.log(res)});
-//     }   
-//     catch (error) {
-//         console.log('error')
-//     }
-// })
